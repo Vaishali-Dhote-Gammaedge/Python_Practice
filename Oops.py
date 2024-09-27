@@ -154,26 +154,26 @@
 # t.info()
 
 
-# class animal:
-#     def __init__(self, name):
-#         self.name = name
+class animal:
+    def __init__(self, name):
+        self.name = name
 
-#     def make_sound(self):
-#         pass
-
-
-# class dog(animal):
-#     def make_sound(self):
-#         return "bark"
+    def make_sound(self):
+        pass
 
 
-# class cat(animal):
-#     def make_sound(self):
-#         return "meow"
+class dog(animal):
+    def make_sound(self):
+        return "bark"
 
 
-# d = dog("sheru")
-# print(d.name, d.make_sound())
+class cat(animal):
+    def make_sound(self):
+        return "meow"
 
-# c = cat("Billi")
-# print(c.name, c.make_sound())
+
+d = dog("sheru")
+print(d.name, d.make_sound())
+
+c = cat("Billi")
+print(c.name, c.make_sound())

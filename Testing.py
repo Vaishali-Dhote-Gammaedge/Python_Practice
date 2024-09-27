@@ -172,6 +172,7 @@
 # def test_square(input_value, Expected_value):
 #     assert square(input_value) == Expected_value
 
+<<<<<<< HEAD
 # import unittest
 
 
@@ -190,3 +191,22 @@
 
 # if __name__ == "__main__":
 #     unittest.main()
+=======
+import unittest
+
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Can't Divide by Zero")
+
+
+class test_divide(unittest.TestCase):
+    def test_division(self):
+        with self.assertRaises(ValueError) as context:
+            divide(10, 0)
+        self.assertEqual(str(context.exception), "Can't Divide by Zero")
+
+
+if __name__ == "__main__":
+    unittest.main()
+>>>>>>> 8d6d4c97ea00651a2a36ab253d624e73c0451059
